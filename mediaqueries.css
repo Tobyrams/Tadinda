@@ -1,0 +1,45 @@
+/* ////////////////////////// Laptop ////////////////////////////////// */
+
+/* ////////////////////////// Tablet ////////////////////////////////// */
+@media screen and (max-width: 960px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  .logo {
+    height: 10vh;
+    width: 40vw;
+  }
+  .hamburger-menu {
+    width: 60vw;
+  }
+  /* Tadinda Logo */
+  .nav-logo > img {
+    left: 10vw;
+  }
+}
+/* ////////////////////////// Phone ////////////////////////////////// */
+@media screen and (max-width: 600px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  .logo {
+    height: 10vh;
+    width: 40vw;
+  }
+  .hamburger-menu {
+    width: 60vw;
+  }
+  .btn-reserve {
+    width: 40%;
+  }
+  /* Tadinda Logo */
+  .nav-logo > img {
+    left: 10vw;
+  }
+}

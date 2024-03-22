@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="shortcut icon" href="Imgs/TadindaLogo-removebg.png" type="image/x-icon">
+    <title>Tadinda</title>
+</head>
+
+<body>
+
+    <nav id="desktop-nav">
+        <div class="nav-logo"><img src="Imgs/Tadinda-Logo-removebg.png" alt="Tatinda Logo"></div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li class="page-active "><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <button class="btn-reserve" onclick="location.href='contact.html'">Reserve table</button>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="nav-logo"><img src="Imgs/Tadinda-Logo-removebg.png" alt="Tatinda Logo"></div>
+
+        <div class="hamburger-menu ">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="menu.html" onclick="toggleMenu()">Menu</a></li>
+                <li class="page-active"><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+                <button class="btn-reserve" onclick="location.href='contact.html'">Reserve table</button>
+
+            </div>
+
+        </div>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

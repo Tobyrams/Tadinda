@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --clr-primary: #c39b22;
+  --clr-text-color: #d1c8c1;
+  --clr-background: #1f1c1b;
+
+  --text: "Poppins", sans-serif;
+  --heading: "Bebas Neue", sans-serif;
+}
+
+/* /////////////////////  NAV     /////////////////////*/
+
+#hamburger-nav {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  /* height: 10vh; */
+}
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+  width: 90vw;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 45px;
+  top: -8px;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 3px;
+  background-color: var(--clr-text-color);
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 5vh;
+  background-color: var(--clr-background);
+  width: 100vw;
+  max-height: 0;
+  overflow: hidden;
+  height: 1157px;
+  left: -40vw;
+
+  transition: 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: var(--heading);
+  align-items: center;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--clr-text-color);
+  text-decoration: none;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+/* When the hamburger menu is opened */
+.menu-links.open {
+  max-height: 91vh;
+  text-align: center;
+  transition: 0.7s;
+}
+
+/*The X button transision for hamburger menu*/
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+nav {
+  background-color: var(--clr-background);
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.nav-logo > img {
+  height: 100px;
+  width: 40vw;
+  object-fit: contain;
+  position: relative;
+  left: -5vw;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  width: 60vw;
+  justify-content: space-evenly;
+  list-style: none;
+  font-family: var(--heading);
+  padding-top: 1rem;
+}
+.nav-links a {
+  text-decoration: none;
+  font-size: 2.1rem;
+  color: var(--clr-text-color);
+}
+.nav-links a:hover {
+  color: var(--clr-primary);
+  transition: color 0.3s linear;
+}
+
+/* Reserve now btn */
+.btn-reserve {
+  padding: 5px 10px 0 10px;
+  font-family: var(--heading);
+  font-size: 2rem;
+  color: var(--clr-background);
+  background-color: var(--clr-primary);
+  border: none;
+  border-radius: 5px;
+}
+.btn-reserve:hover {
+  background-color: #e3d3a2;
+  color: var(--clr-primary);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+/* Active page for the nav-heading */
+.page-active a {
+  color: var(--clr-primary);
+}
+
+/* /////////////////////  BODY     /////////////////////*/
+body {
+  font-family: var(--heading);
+  background-color: var(--clr-background);
+}
