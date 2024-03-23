@@ -50,7 +50,76 @@
     </nav>
 
 
-    <section id="Hero">
+    <section id="Contact-FindUs">
+        <div class="Contact-container">
+
+            <div class="Info">
+                <h3>Location</h3>
+                <h2>Find Us At</h2>
+
+                <p><i class="fa-solid fa-location-dot fa-icon"></i>124 Ivy Rd, Norwood, Johannesburg, 2192</p>
+                <p><i class="fa-solid fa-phone fa-icon"></i>000-000-0000</p>
+                <p><i class="fa-regular fa-envelope fa-icon"></i></i>email@gmail.com</p>
+
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.221182494034!2d28.07417971252717!3d-26.15692516195767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950dfef95376d3%3A0x3f10dbee2442a343!2sTadinda%20Mediterrenian%20Eatery!5e0!3m2!1sen!2sza!4v1711221376954!5m2!1sen!2sza"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+
+    </section>
+
+    <!-- Using web3 to make the form work https://web3forms.com/ -->
+    <section id="Contact-Form">
+
+        <div class="Info form-Info">
+            <h3>Lets Talk</h3>
+            <h2>Reserve Table Now</h2>
+        </div>
+
+        <div class="Form-container">
+            <form action="https://api.web3forms.com/submit" method="POST" id="ContForm">
+
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Number</label>
+                    <input type="text" placeholder="Phone Number(optional)">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="date">Date*</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time*</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Type you message here..."></textarea>
+
+                </div>
+
+
+                <button class="btn-reserve form-btn" name="submit" type="submit">Submit</button>
+
+
+
+            </form>
+        </div>
+
+
 
     </section>
 

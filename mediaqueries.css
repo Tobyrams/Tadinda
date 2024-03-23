@@ -26,6 +26,45 @@
     background-image: url(Imgs/Mobile-Background-Material.svg);
   }
 
+  /* Contact Page */
+
+  #Contact-Form {
+    margin-bottom: 10rem;
+  }
+  .Contact-container {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+
+    padding: 5rem 5rem 5rem 5rem;
+  }
+  .Contact-container iframe {
+    border-radius: 10px;
+    height: 20rem;
+  }
+  .Info {
+    padding-right: 1rem;
+  }
+  /* Makes the fontAwesome colors #d1c8c1 */
+  .Info .fa-icon {
+    color: var(--clr-text-color);
+    font-size: 1.5rem;
+  }
+  .Info > h3 {
+    font-size: 1.5rem;
+  }
+  .Info > h2 {
+    font-size: 3.5rem;
+  }
+  .Info > p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .Form-container {
+    width: 80%;
+    max-width: 1000px;
+    min-width: 500px;
+  }
   /*/////////// FOOTER  ////////// */
   .footer-logo > img {
     width: 80%;
@@ -68,7 +107,7 @@
     width: 60vw;
   }
   .btn-reserve {
-    width: 40%;
+    width: 50%;
   }
   /* Tadinda Logo */
   .nav-logo > img {
@@ -77,6 +116,84 @@
   /*/////////// BODY  ////////// */
   body {
     background-image: url(Imgs/Mobile-Background-Material.svg);
+  }
+  /* Contact Page */
+  #Contact-FindUs {
+    margin-bottom: 10rem;
+  }
+  .Contact-container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+  }
+
+  .Contact-container iframe {
+    border-radius: 10px;
+    height: 20rem;
+    width: 20rem;
+  }
+  #Contact-form {
+    height: 0;
+  }
+  .Info {
+    margin-bottom: 1.5rem;
+    padding-right: 0;
+  }
+
+  .Info .fa-icon {
+    padding-right: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .Info > h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .Info > h2 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .contactInfo-details {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .Info > p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  .Form-container {
+    width: 80%;
+    height: 85%;
+    min-width: 200px;
+  }
+  .form-group label {
+    font-size: 1rem;
+  }
+  #ContForm input[type="text"],
+  #ContForm input[type="email"],
+  #ContForm input[type="tel"],
+  #ContForm input[type="date"],
+  #ContForm input[type="time"],
+  #ContForm textarea {
+    width: 100%;
+    color: white;
+    border: 1px solid #7d7b76;
+    background: #7d7b76;
+    margin: 0 0 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  #ContForm {
+    padding: 1.5rem;
   }
 
   /*/////////// FOOTER  ////////// */
