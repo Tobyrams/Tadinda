@@ -9,16 +9,19 @@
 }
 
 :root {
+  /* Website Colors */
   --clr-primary: #c39b22;
   --clr-text-color: #d1c8c1;
   --clr-background: #1f1c1b;
 
+  /* Website Fonts */
   --text: "Poppins", sans-serif;
   --heading: "Bebas Neue", sans-serif;
 }
 
 /* /////////////////////  NAV     /////////////////////*/
 
+/* hamburger navbar ⬇ */
 #hamburger-nav {
   display: none;
   flex-direction: row;
@@ -112,6 +115,7 @@
 .hamburger-icon span:first-child {
   transform: none;
 }
+/* hamburger navbar ⬆ */
 
 nav {
   background-color: var(--clr-background);
@@ -125,7 +129,7 @@ nav {
   flex-direction: row;
 }
 .nav-logo > img {
-  height: 100px;
+  height: 90px;
   width: 40vw;
   object-fit: contain;
   position: relative;
@@ -176,4 +180,8 @@ nav {
 body {
   font-family: var(--heading);
   background-color: var(--clr-background);
+
+  /* Background Material ⬇*/
+  background-image: url(Imgs/Material-Background.svg);
+  /* Background Material ⬆ */
 }

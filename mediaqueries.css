@@ -2,6 +2,7 @@
 
 /* ////////////////////////// Tablet ////////////////////////////////// */
 @media screen and (max-width: 960px) {
+  /*/////////// NAV  ////////// */
   #desktop-nav {
     display: none;
   }
@@ -19,9 +20,15 @@
   .nav-logo > img {
     left: 10vw;
   }
+
+  /*/////////// BODY  ////////// */
+  body {
+    background-image: url(Imgs/Mobile-Background-Material.svg);
+  }
 }
 /* ////////////////////////// Phone ////////////////////////////////// */
 @media screen and (max-width: 600px) {
+  /*/////////// NAV  ////////// */
   #desktop-nav {
     display: none;
   }
@@ -41,5 +48,9 @@
   /* Tadinda Logo */
   .nav-logo > img {
     left: 10vw;
+  }
+  /*/////////// BODY  ////////// */
+  body {
+    background-image: url(Imgs/Mobile-Background-Material.svg);
   }
 }
