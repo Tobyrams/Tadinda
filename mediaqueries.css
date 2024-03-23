@@ -44,7 +44,11 @@
     gap: 1rem;
   }
   .footer-copywrite {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 /* ////////////////////////// Phone ////////////////////////////////// */
@@ -82,6 +86,9 @@
   .footer-info {
     font-size: 1.3rem;
     padding-right: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     p {
       font-size: 1rem;
     }
@@ -93,6 +100,10 @@
     font-size: 1.5rem;
   }
   .footer-copywrite {
-    font-size: 1rem;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
