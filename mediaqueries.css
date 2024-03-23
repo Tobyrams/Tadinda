@@ -25,6 +25,27 @@
   body {
     background-image: url(Imgs/Mobile-Background-Material.svg);
   }
+
+  /*/////////// FOOTER  ////////// */
+  .footer-logo > img {
+    width: 80%;
+  }
+  .footer-info {
+    font-size: 1.5rem;
+    padding-right: 0;
+    p {
+      font-size: 1rem;
+    }
+  }
+  .social-icons .fa-brands {
+    font-size: 1.7rem;
+  }
+  .social-icons {
+    gap: 1rem;
+  }
+  .footer-copywrite {
+    font-size: 1.2rem;
+  }
 }
 /* ////////////////////////// Phone ////////////////////////////////// */
 @media screen and (max-width: 600px) {
@@ -52,5 +73,26 @@
   /*/////////// BODY  ////////// */
   body {
     background-image: url(Imgs/Mobile-Background-Material.svg);
+  }
+
+  /*/////////// FOOTER  ////////// */
+  .footer-logo > img {
+    width: 100%;
+  }
+  .footer-info {
+    font-size: 1.3rem;
+    padding-right: 1rem;
+    p {
+      font-size: 1rem;
+    }
+  }
+  .social-icons {
+    gap: 0.5rem;
+  }
+  .social-icons .fa-brands {
+    font-size: 1.5rem;
+  }
+  .footer-copywrite {
+    font-size: 1rem;
   }
 }

@@ -7,6 +7,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+html {
+  font-size: 15px;
+}
 
 :root {
   /* Website Colors */
@@ -184,4 +187,88 @@ body {
   /* Background Material ⬇*/
   background-image: url(Imgs/Material-Background.svg);
   /* Background Material ⬆ */
+}
+#Hero {
+  height: 90vh;
+}
+
+/* /////////////////////  FOOTER     /////////////////////*/
+footer {
+  width: 100%;
+  height: 25vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-repeat: inherit;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-text-color);
+  font-size: 2rem;
+  /* width: 50%; */
+  justify-content: space-around;
+}
+
+.footer-logo > img {
+  /* width: 50%; */
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.social-icons .fa-brands {
+  font-size: 2.5rem;
+  color: var(--clr-text-color);
+}
+
+.fa-brands:hover {
+  color: var(--clr-primary);
+  transition: color 0.3s ease-in;
+}
+
+.footer-info {
+  margin-left: 3rem;
+}
+.footer-info p {
+  font-family: var(--text);
+  font-size: 1.5rem;
+}
+.footer-arrow {
+  position: relative;
+  font-size: 2rem;
+}
+
+/* Address Hover animation ⬇ */
+.footer-address:hover {
+  color: var(--clr-primary);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.footer-address:hover .footer-arrow {
+  color: var(--clr-primary);
+  transform: translateY(-20px);
+  transition: all 0.6s ease-out;
+}
+
+.footer-copywrite {
+  display: inline-block;
+  width: 100%;
+  height: 5vh;
+  font-size: 1.5rem;
+  color: var(--clr-text-color);
+  text-align: center;
+  font-family: var(--text);
+}
+
+/* Background Material */
+.noise {
+  background: linear-gradient(to right, var(--clr-background), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
 }
