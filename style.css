@@ -92,6 +92,7 @@ html {
   max-height: 91vh;
   text-align: center;
   transition: 0.7s;
+  z-index: 100;
 }
 
 /*The X button transision for hamburger menu*/
@@ -188,11 +189,184 @@ body {
   background-image: url(Imgs/Material-Background.svg);
   /* Background Material ⬆ */
 }
-
+/* SECTION */
+/* Home Page ⬇️*/
 #Hero {
   height: 90vh;
+  position: relative; /* Ensure the pseudo-element is positioned relative to this container */
+  z-index: 1; /* Lower z-index to ensure content on top is clickable and visible */
 }
-/* Contact Page */
+
+/* Backgound img/opacity */
+#Hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(Imgs/Hero-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.Hero-container {
+  color: #efefef;
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding: 0 10rem;
+  text-align: center;
+  /* font-family: var(--text); */
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  h3 {
+    font-size: 4rem;
+  }
+  hr {
+    background-color: #d8a817;
+    height: 5px;
+    border: none;
+  }
+}
+.ourStory-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 5rem;
+  h2 {
+    font-size: 3rem;
+    color: #ffff;
+  }
+  h3 {
+    font-size: 2.5rem;
+    font-family: var(--text);
+    text-align: center;
+    color: var(--clr-text-color);
+    font-weight: 200;
+  }
+}
+.Menu-preview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 5rem 0;
+
+  .window-container {
+    padding-bottom: 5rem;
+  }
+}
+.Menu-preview-btn {
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 15%;
+  color: #ffff;
+  padding: 1rem 0.5rem;
+  font-size: 3rem;
+}
+.window-container {
+  display: flex;
+  max-width: 343px;
+  flex-direction: column;
+  font-size: 3rem;
+  color: #efefef;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.window-image {
+  aspect-ratio: 0.74;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 150px 150px 10px 10px;
+  border: 5px solid var(--clr-primary);
+}
+
+.window-title {
+  font-family: var(--heading);
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  background-color: var(--Primary, #c39b22);
+  align-self: center;
+  z-index: 10;
+  margin-top: -60px;
+  width: 100%;
+  max-width: 276px;
+  padding: 0px 35px;
+}
+/* ⚠️ */
+@media screen and (max-width: 600px) {
+  #Hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .Hero-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  .ourStory-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 2.5rem;
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .window-container {
+    width: 315px;
+    font-size: 2.5rem;
+  }
+  .Menu-preview-btn {
+    padding: 0.5rem 0.5rem;
+    font-size: 2.5rem;
+  }
+}
+
+/* ⚠️ */
+@media screen and (max-width: 960px) {
+  #Hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* opacity: 0.7; */
+  }
+}
+
+/* SECTION */
+
+/* Contact Page ⬇️*/
 #Contact-FindUs {
   /* height: 80vh; */
   padding: 5rem 0 10rem 0;
