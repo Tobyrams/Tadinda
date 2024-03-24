@@ -34,7 +34,7 @@
   .Contact-container {
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    /* height: 80vh; */
 
     padding: 5rem 5rem 5rem 5rem;
   }
@@ -120,6 +120,7 @@
   /* Contact Page */
   #Contact-FindUs {
     margin-bottom: 10rem;
+    padding: 0;
   }
   .Contact-container {
     display: flex;
