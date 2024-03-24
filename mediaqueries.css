@@ -26,7 +26,15 @@
     background-image: url(Imgs/Mobile-Background-Material.svg);
   }
 
-  /* Contact Page */
+  /* Home Page ⬇ */
+
+  #Hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Contact Page ⬇*/
 
   #Contact-Form {
     margin-bottom: 10rem;
@@ -99,6 +107,9 @@
   #hamburger-nav {
     display: flex;
   }
+  .Hero-container .arrow-down-icon {
+    font-size: 2rem;
+  }
   .logo {
     height: 10vh;
     width: 40vw;
@@ -117,7 +128,51 @@
   body {
     background-image: url(Imgs/Mobile-Background-Material.svg);
   }
-  /* Contact Page */
+  /* Home Page ⬇*/
+  #Hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .Hero-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  .ourStory-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 2.5rem;
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .window-container {
+    width: 315px;
+    font-size: 2.5rem;
+  }
+  .Menu-preview-btn {
+    padding: 0.5rem 0.5rem;
+    font-size: 2.5rem;
+  }
+
+  /* Contact Page ⬇*/
+
   #Contact-FindUs {
     margin-bottom: 10rem;
     padding: 0;
