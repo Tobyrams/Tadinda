@@ -34,6 +34,27 @@
     background-position: center;
   }
 
+  /* Menu Pgae ⬇ */
+  .Menu-preview {
+    padding: 0;
+  }
+
+  #Menu-Section {
+    .btn-reserve {
+      width: 20%;
+    }
+  }
+
+  .window-container {
+    width: 270px;
+    font-size: 2rem;
+
+    .window-title {
+      width: 90%;
+      margin-top: -50px;
+    }
+  }
+
   /* Contact Page ⬇*/
 
   #Contact-Form {
@@ -162,9 +183,26 @@
     }
   }
 
+  /* Menu Page */
+  #Menu-Section {
+    .btn-reserve {
+      width: 35%;
+    }
+    .Menu-heading {
+      font-size: 1.5rem;
+    }
+  }
   .window-container {
-    width: 315px;
-    font-size: 2.5rem;
+    width: 235px;
+    font-size: 2rem;
+  }
+  .window-title {
+    margin-top: -35px;
+    width: 90%;
+  }
+
+  .Menu-preview {
+    padding: 0px 0rem;
   }
   .Menu-preview-btn {
     padding: 0.5rem 0.5rem;

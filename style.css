@@ -269,17 +269,66 @@ body {
     font-weight: 200;
   }
 }
+
+/* Menu Page */
+#Menu-Section {
+  .btn-reserve {
+    display: flex;
+    margin: 0 auto;
+    width: 11%;
+    justify-content: center;
+    padding: 15px 0px;
+    font-size: 2rem;
+  }
+
+  .Menu-heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    font-size: 2rem;
+    color: var(--clr-text-color);
+
+    span {
+      color: var(--clr-primary);
+    }
+  }
+}
+.full-menu-btn {
+  color: #ffff;
+}
+
+/* Heading arrow animation ⬇ */
+.bounce-infinate {
+  animation: bounce 2s infinite;
+}
+.bounce-5 {
+  animation: bounce 2s 5;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+/* Heading arrow animation ⬆ */
+
 .Menu-preview {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 5rem 0;
+  padding: 0px 5rem;
 
   .window-container {
     padding-bottom: 5rem;
   }
 }
+
 .Menu-preview-btn {
   margin: 0 auto;
   display: flex;
@@ -290,6 +339,7 @@ body {
   padding: 1rem 0.5rem;
   font-size: 3rem;
 }
+
 .window-container {
   display: flex;
   max-width: 343px;
@@ -307,6 +357,10 @@ body {
   width: 100%;
   border-radius: 150px 150px 10px 10px;
   border: 5px solid var(--clr-primary);
+  &:hover {
+    opacity: 0.7;
+    transition: all 0.3s ease-out;
+  }
 }
 
 .window-title {
@@ -322,7 +376,7 @@ body {
   padding: 0px 35px;
 }
 
-/* Contact Page ⬇️*/
+/* Contact Page ⬇*/
 #Contact-FindUs {
   /* height: 80vh; */
   padding: 5rem 0 10rem 0;
