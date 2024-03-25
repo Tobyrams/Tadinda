@@ -243,7 +243,7 @@ body {
     font-size: 3rem;
     color: #ffff;
     position: absolute;
-    bottom: 25px;
+    bottom: 45px;
   }
   .arrow-down-icon:hover {
     transform: translateY(-10px);
@@ -276,9 +276,10 @@ body {
     display: flex;
     margin: 0 auto;
     width: 11%;
+    max-width: 200px;
     justify-content: center;
     padding: 15px 0px;
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 
   .Menu-heading {
@@ -293,6 +294,7 @@ body {
     }
   }
 }
+
 .full-menu-btn {
   color: #ffff;
 }
@@ -322,7 +324,7 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 5rem 0;
-  padding: 0px 5rem;
+  padding: 0px 12rem;
 
   .window-container {
     padding-bottom: 5rem;
@@ -342,11 +344,11 @@ body {
 
 .window-container {
   display: flex;
-  max-width: 343px;
   flex-direction: column;
-  font-size: 3rem;
-  color: #efefef;
+  max-width: 343px;
+  font-size: 2.7rem;
   font-weight: 400;
+  color: #efefef;
   white-space: nowrap;
   text-align: center;
 }
