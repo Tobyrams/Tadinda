@@ -624,7 +624,7 @@ textarea::placeholder {
 /* /////////////////////  FOOTER     /////////////////////*/
 footer {
   width: 100%;
-  padding: 1rem 0;
+  padding: 3rem 1rem 1rem 1rem;
   margin-top: 25rem;
   /* height: 30vh; */
   /* background-color: black; */
@@ -645,8 +645,11 @@ footer {
   justify-content: space-around;
 }
 
-.footer-logo > img {
-  /* width: 50%; */
+.footer-logo {
+  width: 150px;
+  img {
+    width: 100%;
+  }
 }
 
 .social-icons {

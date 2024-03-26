@@ -291,8 +291,15 @@
   }
 
   /*/////////// FOOTER  ////////// */
-  .footer-logo > img {
+  .footer-container {
     width: 100%;
+  }
+  .footer-logo {
+    width: 300px;
+    img {
+      width: 100%;
+      padding-right: 1rem;
+    }
   }
   .footer-info {
     font-size: 1.3rem;
