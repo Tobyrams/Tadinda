@@ -41,7 +41,7 @@
 
   #Menu-Section {
     .btn-reserve {
-      width: 20%;
+      width: 50%;
     }
   }
 
@@ -139,7 +139,7 @@
     width: 60vw;
   }
   .btn-reserve {
-    width: 50%;
+    max-width: 100%;
   }
   /* Tadinda Logo */
   .nav-logo > img {
