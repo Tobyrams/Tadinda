@@ -9,12 +9,14 @@
     <link rel="icon" href="Imgs/Tadinda-favicon.svg" type="image/x-icon">
     <!-- FontAwesome ⬇-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Animate On Scroll Library  https://michalsnik.github.io/aos/  ⬇-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Tadinda</title>
 </head>
 
 <body>
 
-    <nav id="desktop-nav">
+    <nav id="desktop-nav" data-aos="fade-down">
         <div class="nav-logo"><img src="Imgs/Logo.svg" alt="Tatinda Logo"></div>
 
         <ul class="nav-links">
@@ -26,7 +28,7 @@
         </ul>
     </nav>
 
-    <nav id="hamburger-nav">
+    <nav id="hamburger-nav" data-aos="fade-down">
         <div class="nav-logo"><img src="Imgs/Logo.svg" alt="Tatinda Logo"></div>
 
         <div class="hamburger-menu ">
@@ -50,7 +52,7 @@
     </nav>
 
 
-    <section>
+    <section data-aos="zoom-in-up">
 
         <div class="ourStoryContainer">
             <h3><span>Tadinda's</span> Story</h3>
@@ -68,7 +70,7 @@
 
     </section>
 
-    <section id="About-carousel">
+    <section id="About-carousel" data-aos="zoom-in-up">
 
         <div class="logos">
 
@@ -108,7 +110,7 @@
 
 
 
-    <footer class="noise" id="footer">
+    <footer class="noise" id="footer" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 
 
         <div class="footer-container">
@@ -138,10 +140,17 @@
         
         
     </footer>
-    <p class=" footer-copywrite noise">Copyright &#169; 2024 Tadinda(Pty)Ltd. All Rights Reserved.</p>
+    <p class=" footer-copywrite noise">Copyright &#169; 2024 Tadinda(Pty)Ltd. All Rights
+                        Reserved.</p>
 
 
                         <script src="script.js"></script>
+                        <!-- AOS animate ⬇ -->
+                        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <!-- AOS animate ⬆ -->
 </body>
 
 </html>

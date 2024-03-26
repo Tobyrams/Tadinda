@@ -9,12 +9,14 @@
     <link rel="icon" href="Imgs/Tadinda-favicon.svg" type="image/x-icon">
     <!-- FontAwesome ⬇-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Animate On Scroll Library  https://michalsnik.github.io/aos/  ⬇-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Tadinda</title>
 </head>
 
 <body>
 
-    <nav id="desktop-nav">
+    <nav id="desktop-nav" data-aos="fade-down">
         <div class="nav-logo"><img src="Imgs/Logo.svg" alt="Tatinda Logo"></div>
 
         <ul class="nav-links">
@@ -26,7 +28,7 @@
         </ul>
     </nav>
 
-    <nav id="hamburger-nav">
+    <nav id="hamburger-nav" data-aos="fade-down">
         <div class="nav-logo"><img src="Imgs/Logo.svg" alt="Tatinda Logo"></div>
 
         <div class="hamburger-menu ">
@@ -49,7 +51,7 @@
 
     </nav>
 
-    <section id="Hero">
+    <section id="Hero" data-aos="zoom-in-up">
 
         <div class="Hero-container">
             <h2>
@@ -66,7 +68,7 @@
 
     </section>
 
-    <section id="OurStory">
+    <section id="OurStory" data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="center-bottom">
         <div class="home-ourStory-container">
             <h2>Our Story</h2>
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -76,7 +78,7 @@
         </div>
     </section>
 
-    <section>
+    <section data-aos="fade-up" data-aos-easing="linear" data-aos-anchor-placement="center-bottom">>
         <div class="Menu-preview">
             <div class="window-container">
                 <img src="Imgs/About-Slider-Images/lahmajun-Pide-img.jpg" alt="Pide dish" class="window-image" />
@@ -95,7 +97,8 @@
     </section>
 
 
-    <footer class="noise" id="footer">
+    <footer class="noise" id="footer" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-anchor-placement="top-bottom">
 
         <div class="footer-container">
 
@@ -123,15 +126,20 @@
         </div>
         
     </footer>
-    <p class=" footer-copywrite noise" data-aos="fade-up" data-aos-easing="linear"
-                        data-aos-anchor-placement="center-bottom">Copyright &#169; 2024 Tadinda(Pty)Ltd. All Rights
+    <p class=" footer-copywrite noise">Copyright &#169; 2024 Tadinda(Pty)Ltd. All Rights
                         Reserved.</p>
 
 
 
 
 
-                        <script src=" script.js"></script>
+                        <script src=" script.js" defer></script>
+                        <!-- AOS animate ⬇ -->
+                        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
+                        <!-- AOS animate ⬆ -->
 
 </body>
 
