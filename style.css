@@ -23,6 +23,33 @@ html {
   --heading: "Bebas Neue", sans-serif;
 }
 
+/* Back to top btn  */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--clr-background);
+  border: 2px solid var(--clr-text-color);
+  i {
+    font-size: 2rem;
+    color: var(--clr-text-color);
+  }
+  &:hover {
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border-color: var(--clr-primary);
+    background-color: #372d29;
+    i {
+      transition: all 0.3s linear;
+      color: var(--clr-primary);
+    }
+  }
+}
+
 /* /////////////////////  NAV     /////////////////////*/
 
 /* hamburger navbar ⬇ */
