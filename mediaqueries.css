@@ -161,12 +161,20 @@
   .Hero-container {
     display: flex;
     flex-direction: column;
-    padding: 0 5rem;
+    padding: 0 2rem;
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.9rem;
+      font-weight: 300;
     }
+
     h3 {
-      font-size: 2rem;
+      font-size: 2.5rem;
+    }
+
+    .Hero-container-line {
+      width: 6rem;
+      height: 3.5px;
+      /* padding: 0 3rem; */
     }
   }
 
@@ -185,13 +193,11 @@
 
   /* Menu Page */
   #Menu-Section {
-    .btn-reserve {
-      width: 35%;
-    }
     .Menu-heading {
       font-size: 1.5rem;
     }
   }
+
   .window-container {
     width: 235px;
     font-size: 2rem;
