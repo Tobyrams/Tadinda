@@ -234,7 +234,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(Imgs/Hero-img.jpg);
+  background-image: url(Imgs/About-Slider-Images/Inside-1-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.6;
@@ -406,6 +406,7 @@ body {
 
 .window-title {
   font-family: var(--heading);
+  font-weight: 400;
   border-radius: 30px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
   background-color: var(--Primary, #c39b22);
