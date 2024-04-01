@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.appendChild(bounce);
 });
 
-// Scroll to top button
+// Scroll to top button⬇
 
 //Get the button
 var mybutton = document.getElementById("backToTop");
@@ -51,7 +51,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// SwiperJS
+// SwiperJS //
 let swiperCards = new Swiper(".card__content", {
   loop: true,
   spaceBetween: 50,
@@ -76,4 +76,24 @@ let swiperCards = new Swiper(".card__content", {
       slidesPerView: 3,
     },
   },
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const images = [
+    "Imgs/About-Slider-Images/Inside-1-img.jpg",
+    "Imgs/About-Slider-Images/Tadinda-Outside.jpeg",
+    "Imgs/One.jpg",
+    "Imgs/About-Slider-Images/Rumi-Pide-3-img.jpg",
+    "Imgs/Tadinda-Shelf.jpg",
+  ];
+  let currentIndex = 0;
+
+  function changeBackground() {
+    const heroElement = document.querySelector(".hero-bg");
+    heroElement.style.backgroundImage = `url(${images[currentIndex]})`;
+    currentIndex = (currentIndex + 1) % images.length; // Loop back to the first image
+  }
+
+  changeBackground(); // Change background for the first time immediately
+  setInterval(changeBackground, 5000); // Change background every 5 seconds
 });

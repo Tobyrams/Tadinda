@@ -223,23 +223,35 @@ body {
 #Hero {
   height: 90vh;
   position: relative; /* Ensure the pseudo-element is positioned relative to this container */
-  z-index: 1; /* Lower z-index to ensure content on top is clickable and visible */
+  z-index: 2; /* Lower z-index to ensure content on top is clickable and visible */
+}
+
+.hero-bg {
+  height: 90vh;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  width: 100%;
+  opacity: 0.6;
+  /* z-index: -1; */
 }
 
 /* Backgound img/opacity */
-#Hero::before {
+/* #Hero::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(Imgs/About-Slider-Images/Inside-1-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.6;
   z-index: -1;
-}
+} */
 
 .Hero-container {
   color: #efefef;
@@ -742,7 +754,7 @@ body {
 /* Contact Page Form */
 #ContForm {
   padding: 5rem;
-  background-color: #373633;
+  background-color: #333331;
   border-radius: 10px;
 }
 
