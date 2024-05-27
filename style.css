@@ -326,6 +326,16 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .home-ourStory-container {
+    padding: 10rem 2rem;
+
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+}
+
 /* Customer Reviews  */
 
 .Customer__reviews {
@@ -396,7 +406,7 @@ body {
 .card__button {
   display: inline-block;
   background-color: var(--clr-primary);
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   font-size: 1.25rem;
   text-decoration: none;
   border-radius: 0.25rem;
@@ -605,17 +615,11 @@ body {
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #ffff;
     font-family: var(--text);
     font-weight: 300;
     margin-top: 2rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .ourStoryContainer {
-    padding: 3rem 2rem;
   }
 }
 
@@ -687,6 +691,8 @@ body {
 
 @media screen and (max-width: 600px) {
   .ourStoryContainer {
+    padding: 3rem 2rem;
+
     h3 {
       font-size: 2.7rem;
     }
