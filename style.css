@@ -605,11 +605,17 @@ body {
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #ffff;
     font-family: var(--text);
     font-weight: 300;
     margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ourStoryContainer {
+    padding: 3rem 2rem;
   }
 }
 

@@ -14,8 +14,10 @@ function openInNewTab(url) {
 // Menu Heading arrow annimation
 document.addEventListener("DOMContentLoaded", () => {
   const menuHeading = document.querySelector(".Menu-Arrow");
-  menuHeading.classList.add("bounce-infinate");
-  document.body.appendChild(bounce);
+  if (menuHeading) {
+    menuHeading.classList.add("bounce-infinate");
+    document.body.appendChild(bounce);
+  }
 });
 // Home page Hero arrow animation 5 times
 document.addEventListener("DOMContentLoaded", () => {
